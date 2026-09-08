@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle.querySelector('i');
 
-    const currentTheme = localStorage.getItem('ditec-theme') || 'dark';
+    const currentTheme = localStorage.getItem('ditec-theme-v2') || 'dark';
     document.documentElement.setAttribute('data-theme', currentTheme);
 
     if (currentTheme === 'dark') {
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('click', () => {
         const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
         document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-        localStorage.setItem('ditec-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('ditec-theme-v2', isDark ? 'light' : 'dark');
 
         themeIcon.classList.toggle('fa-moon');
         themeIcon.classList.toggle('fa-sun');
