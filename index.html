@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DITEC - Desarrollo de Software Profesional</title>
+    <meta name="description" content="DITEC - Soluciones tecnológicas innovadoras. Desarrollo de software a medida, aplicaciones móviles y transformación digital.">
+    <link rel="icon" type="image/png" href="assets/images/DITEC.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+
+    <!-- Cursor Personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/images/DITEC.png" alt="DITEC Logo" class="logo-img">
+                <span class="logo-text">DITEC</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#equipo" class="nav-link">Equipo</a></li>
+                    <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contacto" class="btn btn-primary nav-cta">Cotizar Proyecto</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="hero-particles" id="particles"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-down">
+                    <span class="badge-dot"></span>
+                    Innovación Tecnológica
+                </div>
+                <h1 class="hero-title" data-aos="fade-up">
+                    Transformamos Ideas en
+                    <span class="gradient-text">Soluciones Digitales</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-delay="100">
+                    En DITEC creamos software de alto rendimiento que impulsa el crecimiento de tu negocio. 
+                    Desde aplicaciones web hasta plataformas empresariales complejas.
+                </p>
+                <div class="hero-cta" data-aos="fade-up" data-delay="200">
+                    <a href="#contacto" class="btn btn-primary btn-lg">
+                        <span>Iniciar Proyecto</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#portfolio" class="btn btn-outline btn-lg">
+                        <span>Ver Portfolio</span>
+                    </a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-delay="300">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Proyectos Entregados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Clientes Satisfechos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">main.js</span>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="keyword">const</span> <span class="variable">ditec</span> = {
+  <span class="property">misión</span>: <span class="string">"Innovar"</span>,
+  <span class="property">visión</span>: <span class="string">"Transformar"</span>,
+  <span class="property">valores</span>: [
+    <span class="string">"Excelencia"</span>,
+    <span class="string">"Innovación"</span>,
+    <span class="string">"Compromiso"</span>
+  ]
+};
+
+<span class="function">function</span> <span class="method">crearFuturo</span>() {
+  <span class="keyword">return</span> <span class="variable">ditec</span>.<span class="method">transformar</span>(
+    <span class="variable">tusIdeas</span>
+  );
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestros Servicios</span>
+                <h2 class="section-title">Soluciones que <span class="gradient-text">Impulsan</span> tu Negocio</h2>
+                <p class="section-desc">Ofrecemos servicios integrales de desarrollo de software adaptados a las necesidades específicas de cada cliente.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Aplicaciones web modernas, escalables y de alto rendimiento con las últimas tecnologías del mercado.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> React / Vue / Angular</li>
+                        <li><i class="fas fa-check"></i> Node.js / Python</li>
+                        <li><i class="fas fa-check"></i> APIs RESTful</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Saber más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card featured" data-aos="fade-up" data-delay="100">
+                    <div class="service-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Apps Móviles</h3>
+                    <p>Aplicaciones nativas e híbridas para iOS y Android que ofrecen experiencias excepcionales.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> React Native / Flutter</li>
+                        <li><i class="fas fa-check"></i> iOS & Android</li>
+                        <li><i class="fas fa-check"></i> UI/UX Premium</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Saber más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>Infraestructura en la nube, CI/CD y automatización para un despliegue eficiente y seguro.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> AWS / Azure / GCP</li>
+                        <li><i class="fas fa-check"></i> Docker / Kubernetes</li>
+                        <li><i class="fas fa-check"></i> CI/CD Pipelines</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Saber más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>IA & Machine Learning</h3>
+                    <p>Soluciones inteligentes que aprovechan el poder de la inteligencia artificial para optimizar procesos.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Modelos ML</li>
+                        <li><i class="fas fa-check"></i> NLP / Computer Vision</li>
+                        <li><i class="fas fa-check"></i> Automatización IA</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Saber más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Bases de Datos</h3>
+                    <p>Diseño, optimización y administración de bases de datos para máximo rendimiento.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> PostgreSQL / MySQL</li>
+                        <li><i class="fas fa-check"></i> MongoDB / Redis</li>
+                        <li><i class="fas fa-check"></i> Optimización</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Saber más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Ciberseguridad</h3>
+                    <p>Protección integral de tus sistemas y datos contra amenazas cibernéticas.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Auditorías de Seguridad</li>
+                        <li><i class="fas fa-check"></i> Pentesting</li>
+                        <li><i class="fas fa-check"></i> Compliance</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">
+                        Saber más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Proyectos que <span class="gradient-text">Hablamos</span> por Nosotros</h2>
+                <p class="section-desc">Una selección de nuestros mejores trabajos que demuestran nuestra capacidad y experiencia.</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Móvil</button>
+                <button class="filter-btn" data-filter="enterprise">Empresarial</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #07F967 0%, #05C94F 100%);">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">E-Commerce</span>
+                        <h3>Plataforma de Ventas Online</h3>
+                        <p>Sistema completo de comercio electrónico con pasarela de pagos.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #38ED22 0%, #0BA360 100%);">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Salud</span>
+                        <h3>App de Telemedicina</h3>
+                        <p>Aplicación móvil para consultas médicas en línea.</p>
+                        <div class="portfolio-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>WebRTC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="enterprise">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #2DD4BF 0%, #0D9488 100%);">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">ERP</span>
+                        <h3>Sistema de Gestión Empresarial</h3>
+                        <p>ERP completo para la gestión integral del negocio.</p>
+                        <div class="portfolio-tech">
+                            <span>Vue.js</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #6DC69A 0%, #1B5E42 100%);">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Educación</span>
+                        <h3>Plataforma E-Learning</h3>
+                        <p>Sistema de gestión de cursos y contenidos educativos.</p>
+                        <div class="portfolio-tech">
+                            <span>Angular</span>
+                            <span>NestJS</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #4ADE80 0%, #065F46 100%);">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Gastronomía</span>
+                        <h3>App de Delivery</h3>
+                        <p>Aplicación de pedidos y entrega de comida.</p>
+                        <div class="portfolio-tech">
+                            <span>React Native</span>
+                            <span>Node.js</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="enterprise">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #A5BBBE 0%, #3B5749 100%);">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Logística</span>
+                        <h3>Sistema de Inventario</h3>
+                        <p>Control de inventario con IoT y automatización.</p>
+                        <div class="portfolio-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>MQTT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestro Proceso</span>
+                <h2 class="section-title">Cómo <span class="gradient-text">Trabajamos</span></h2>
+                <p class="section-desc">Un proceso probado que garantiza resultados excepcionales en cada proyecto.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Descubrimiento</h3>
+                        <p>Analicemos tus necesidades, objetivos y desafíos para crear una estrategia personalizada.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-left">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Diseño</h3>
+                        <p>Creamos prototipos y diseños intuitivos que mejoran la experiencia del usuario.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Desarrollo</h3>
+                        <p>Programamos con las mejores prácticas y tecnologías modernas para obtener un producto robusto.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-left">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Entrega</h3>
+                        <p>Desplegamos, capacitamos y brindamos soporte continuo para garantizar tu éxito.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo Section -->
+    <section class="team" id="equipo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestro Equipo</span>
+                <h2 class="section-title">Los <span class="gradient-text">Expertos</span> Detrás de DITEC</h2>
+                <p class="section-desc">Un equipo talentoso y apasionado comprometido con la excelencia.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card" data-aos="fade-up">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Director Técnico</h3>
+                        <span class="team-role">Líder de Arquitectura</span>
+                        <p>Especialista en arquitectura de software escalable y soluciones cloud.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-delay="100">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Lead Designer</h3>
+                        <span class="team-role">Director Creativo</span>
+                        <p>Expert en UX/UI con pasión por crear experiencias digitales memorables.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-delay="200">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Senior Developer</h3>
+                        <span class="team-role">Full Stack Engineer</span>
+                        <p>Desarrollador全栈 con experiencia en múltiples frameworks y lenguajes.</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-delay="300">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>DevOps Engineer</h3>
+                        <span class="team-role">Infraestructura Cloud</span>
+                        <p>Especialista en automatización, CI/CD y infraestructura como código.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologías Section -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tecnologías</span>
+                <h2 class="section-title">Stack <span class="gradient-text">Tecnológico</span></h2>
+            </div>
+            <div class="tech-marquee">
+                <div class="marquee-content">
+                    <div class="tech-item"><i class="fab fa-react"></i><span>React</span></div>
+                    <div class="tech-item"><i class="fab fa-vuejs"></i><span>Vue.js</span></div>
+                    <div class="tech-item"><i class="fab fa-angular"></i><span>Angular</span></div>
+                    <div class="tech-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                    <div class="tech-item"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+                    <div class="tech-item"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+                    <div class="tech-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="tech-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+                    <div class="tech-item"><i class="fab fa-github"></i><span>Git</span></div>
+                    <div class="tech-item"><i class="fab fa-react"></i><span>React</span></div>
+                    <div class="tech-item"><i class="fab fa-vuejs"></i><span>Vue.js</span></div>
+                    <div class="tech-item"><i class="fab fa-angular"></i><span>Angular</span></div>
+                    <div class="tech-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                    <div class="tech-item"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+                    <div class="tech-item"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+                    <div class="tech-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="tech-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+                    <div class="tech-item"><i class="fab fa-github"></i><span>Git</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonios</span>
+                <h2 class="section-title">Lo que Dicen <span class="gradient-text">Nuestros Clientes</span></h2>
+                <p class="section-desc">La satisfacción de nuestros clientes es nuestra mayor motivación.</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"DITEC transformó nuestra visión en una plataforma increíble. Su equipo es profesional, creativo y siempre entregan a tiempo. ¡Totalmente recomendados!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>María García</h4>
+                                <span>CEO, TechStart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"La app móvil que desarrollaron superó todas nuestras expectativas. La calidad del código y la experiencia de usuario son excepcionales."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Carlos Rodríguez</h4>
+                                <span>Director, InnovaApp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Trabajar con DITEC fue una experiencia fantástica. Entendieron perfectamente nuestras necesidades y entregaron una solución que superó nuestras expectativas."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Ana Martínez</h4>
+                                <span>CTO, DataFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="nav-btn prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-btn next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contacto</span>
+                <h2 class="section-title">¿Tienes un <span class="gradient-text">Proyecto</span> en Mente?</h2>
+                <p class="section-desc">Cuéntanos sobre tu proyecto y te contactaremos en menos de 24 horas.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Ubicación</h4>
+                            <p>Servicios Remotos Globales</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>contacto@ditec.dev</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Teléfono</h4>
+                            <p>+54 11 1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Nombre Completo</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Selecciona un servicio</option>
+                            <option value="web">Desarrollo Web</option>
+                            <option value="mobile">Apps Móviles</option>
+                            <option value="cloud">Cloud & DevOps</option>
+                            <option value="ia">IA & Machine Learning</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Cuéntanos sobre tu proyecto</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="assets/images/DITEC.png" alt="DITEC Logo" class="logo-img">
+                        <span class="logo-text">DITEC</span>
+                    </a>
+                    <p>Transformando ideas en soluciones digitales innovadoras desde 2020.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Desarrollo Web</a></li>
+                        <li><a href="#servicios">Apps Móviles</a></li>
+                        <li><a href="#servicios">Cloud & DevOps</a></li>
+                        <li><a href="#servicios">IA & ML</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Suscríbete para recibir las últimas noticias y actualizaciones.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DITEC. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de Volver Arriba -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
