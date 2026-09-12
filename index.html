@@ -59,54 +59,95 @@
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
-        <div class="hero-bg">
-            <div class="hero-particles" id="particles"></div>
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
+        <div class="hero-bg-layers">
+            <div class="hero-bg-layer active" data-slide="0"></div>
+            <div class="hero-bg-layer" data-slide="1"></div>
+            <div class="hero-bg-layer" data-slide="2"></div>
         </div>
+        <div class="hero-grid"></div>
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge" data-aos="fade-down">
-                    <span class="badge-dot"></span>
-                    Innovación Tecnológica
-                </div>
-                <h1 class="hero-title" data-aos="fade-up">
-                    Transformamos Ideas en
-                    <span class="gradient-text">Soluciones Digitales</span>
-                </h1>
-                <p class="hero-subtitle" data-aos="fade-up" data-delay="100">
-                    En DITEC creamos software de alto rendimiento que impulsa el crecimiento de tu negocio. 
-                    Desde aplicaciones web hasta plataformas empresariales complejas.
-                </p>
-                <div class="hero-cta" data-aos="fade-up" data-delay="200">
-                    <a href="#contacto" class="btn btn-primary btn-lg">
-                        <span>Iniciar Proyecto</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#portfolio" class="btn btn-outline btn-lg">
-                        <span>Ver Portfolio</span>
-                    </a>
-                </div>
-                <div class="hero-stats" data-aos="fade-up" data-delay="300">
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="50">0</span>
-                        <span class="stat-suffix">+</span>
-                        <span class="stat-label">Proyectos Entregados</span>
+            <div class="hero-left">
+                <div class="hero-slider" id="hero-slider">
+                    <div class="hero-slide active">
+                        <div class="hero-badge">
+                            <span class="badge-dot"></span>
+                            Innovación Tecnológica
+                        </div>
+                        <h1 class="hero-title">
+                            Transformamos Ideas en
+                            <span class="gradient-text">Soluciones Digitales</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            En DITEC creamos software de alto rendimiento que impulsa el crecimiento de tu negocio.
+                            Desde aplicaciones web hasta plataformas empresariales complejas.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#contacto" class="btn btn-primary btn-lg">
+                                <span>Iniciar Proyecto</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#portfolio" class="btn btn-outline btn-lg">
+                                <span>Ver Portfolio</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="100">0</span>
-                        <span class="stat-suffix">%</span>
-                        <span class="stat-label">Clientes Satisfechos</span>
+                    <div class="hero-slide">
+                        <div class="hero-badge">
+                            <span class="badge-dot"></span>
+                            Sistemas Inteligentes
+                        </div>
+                        <h1 class="hero-title">
+                            Asistentes Virtuales que
+                            <span class="gradient-text">Entienden tu Documentación</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Chatbots que responden con precisión sobre catálogos de carreras, calendarios y normativas.
+                            Disponibles desde la web y WhatsApp, con respuesta por voz.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#servicios" class="btn btn-primary btn-lg">
+                                <span>Explorar Servicios</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#portfolio" class="btn btn-outline btn-lg">
+                                <span>Ver Ejemplos</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="5">0</span>
-                        <span class="stat-suffix">+</span>
-                        <span class="stat-label">Años de Experiencia</span>
+                    <div class="hero-slide">
+                        <div class="hero-badge">
+                            <span class="badge-dot"></span>
+                            Escalabilidad Segura
+                        </div>
+                        <h1 class="hero-title">
+                            Software a Medida con
+                            <span class="gradient-text">Cobertura Cloud</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Desarrollamos plataformas escalables con despliegue automatizado, seguridad integral y
+                            soporte de principio a fin para tu negocio.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#portfolio" class="btn btn-primary btn-lg">
+                                <span>Ver Portfolio</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contacto" class="btn btn-outline btn-lg">
+                                <span>Contáctanos</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <button class="hero-prev" id="hero-prev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="hero-next" id="hero-next" aria-label="Siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="hero-dots" id="hero-dots"></div>
             </div>
-            <div class="hero-visual" data-aos="fade-left">
+            <div class="hero-visual-stack">
+                <div class="hero-visual active" data-slide="0">
                 <div class="code-window">
                     <div class="window-header">
                         <div class="window-dots">
@@ -135,6 +176,75 @@
                     </div>
                 </div>
             </div>
+            <div class="hero-visual" data-slide="1">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">consultor.js</span>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="keyword">const</span> <span class="variable">asistente</span> = <span class="keyword">new</span> <span class="method">Consultor</span>({
+  <span class="property">documentos</span>: [
+    <span class="string">"carreras.pdf"</span>,
+    <span class="string">"calendario.pdf"</span>
+  ],
+  <span class="property">canales</span>: [<span class="string">"web"</span>, <span class="string">"whatsapp"</span>],
+  <span class="property">voz</span>: <span class="keyword">true</span>
+});
+
+<span class="variable">asistente</span>.<span class="method">responder</span>(
+  <span class="string">"¿Qué carreras ofrece la universidad?"</span>
+);</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-slide="2">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">deploy.yml</span>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="property">version:</span> <span class="string">"3.8"</span>
+<span class="property">services:</span>
+  <span class="property">app:</span>
+    <span class="property">build:</span> <span class="method">.</span>
+    <span class="property">ports:</span>
+      - <span class="string">"443:443"</span>
+    <span class="property">scale:</span> <span class="method">3</span>
+
+<span class="property">deploy:</span>
+  <span class="property">strategy:</span> <span class="method">rolling</span>
+  <span class="property">ssl:</span> <span class="method">enabled</span></code></pre>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" data-count="50">0</span>
+                <span class="stat-suffix">+</span>
+                <span class="stat-label">Proyectos Entregados</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="100">0</span>
+                <span class="stat-suffix">%</span>
+                <span class="stat-label">Clientes Satisfechos</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="5">0</span>
+                <span class="stat-suffix">+</span>
+                <span class="stat-label">Años de Experiencia</span>
+            </div>
         </div>
         <div class="scroll-indicator">
             <div class="mouse">
@@ -146,6 +256,12 @@
 
     <!-- Servicios Section -->
     <section class="services" id="servicios">
+        <div class="services-bg">
+            <div class="hero-particles" id="services-particles"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Nuestros Servicios</span>
@@ -698,8 +814,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#" class="logo">
-                        <img src="assets/images/DITEC.png" alt="DITEC Logo" class="logo-img">
-                        <span class="logo-text">DITEC</span>
+                        <img src="assets/images/DITEC-FOOTER.jpg" alt="DITEC Logo" class="footer-logo-img">
                     </a>
                     <p>Transformando ideas en soluciones digitales innovadoras desde 2020.</p>
                     <div class="footer-social">

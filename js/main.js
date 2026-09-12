@@ -109,8 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
         themeIcon.classList.toggle('fa-sun');
     });
 
-    // ===== Particles =====
-    const particlesContainer = document.getElementById('particles');
+    // ===== Particles (fondo de Servicios) =====
+    const particlesContainer = document.getElementById('services-particles');
     if (particlesContainer) {
         const colors = ['#07F967', '#38ED22', '#6DC69A', '#4ADE80'];
         const particleCount = window.innerWidth < 768 ? 20 : 40;
@@ -132,6 +132,95 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             particlesContainer.appendChild(particle);
         }
+    }
+
+    // ===== Slider del Hero =====
+    const heroSlider = document.getElementById('hero-slider');
+    if (heroSlider) {
+        const heroSlides = heroSlider.querySelectorAll('.hero-slide');
+        const heroVisuals = document.querySelectorAll('.hero-visual');
+        const heroBgLayers = document.querySelectorAll('.hero-bg-layer');
+        const dotsContainer = document.getElementById('hero-dots');
+        const prevBtn = document.getElementById('hero-prev');
+        const nextBtn = document.getElementById('hero-next');
+        let currentSlide = 0;
+        let autoTimer = null;
+
+        heroSlides.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.className = 'hero-dot' + (index === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', 'Ir a la diapositiva ' + (index + 1));
+            dot.addEventListener('click', () => goToSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+
+        const heroDots = dotsContainer.querySelectorAll('.hero-dot');
+
+        const goToSlide = (index) => {
+            const total = heroSlides.length;
+            currentSlide = (index + total) % total;
+
+            heroSlides.forEach((slide, i) => {
+                const active = i === currentSlide;
+                slide.classList.toggle('active', active);
+
+                if (active) {
+                    const anims = slide.querySelectorAll('.hero-badge, .hero-title, .hero-subtitle, .hero-cta');
+                    anims.forEach(el => {
+                        el.style.animation = 'none';
+                        void el.offsetWidth;
+                        el.style.animation = '';
+                    });
+                }
+            });
+
+            heroVisuals.forEach((visual, i) => {
+                visual.classList.toggle('active', i === currentSlide);
+            });
+
+            heroBgLayers.forEach((layer, i) => {
+                layer.classList.toggle('active', i === currentSlide);
+            });
+
+            heroDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        };
+
+        const startAuto = () => {
+            stopAuto();
+            autoTimer = setInterval(() => goToSlide(currentSlide + 1), 6000);
+        };
+
+        const stopAuto = () => {
+            if (autoTimer) {
+                clearInterval(autoTimer);
+                autoTimer = null;
+            }
+        };
+
+        prevBtn.addEventListener('click', () => { goToSlide(currentSlide - 1); startAuto(); });
+        nextBtn.addEventListener('click', () => { goToSlide(currentSlide + 1); startAuto(); });
+
+        heroSlider.addEventListener('mouseenter', stopAuto);
+        heroSlider.addEventListener('mouseleave', startAuto);
+
+        heroSlider.addEventListener('touchstart', () => {
+            const startX = event.touches[0].clientX;
+            const onTouchEnd = (ev) => {
+                const endX = ev.changedTouches[0].clientX;
+                const diff = startX - endX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) { goToSlide(currentSlide + 1); }
+                    else { goToSlide(currentSlide - 1); }
+                    startAuto();
+                }
+                heroSlider.removeEventListener('touchend', onTouchEnd);
+            };
+            heroSlider.addEventListener('touchend', onTouchEnd);
+        });
+
+        startAuto();
     }
 
     // ===== Animaciones Scroll (AOS-like) =====
